@@ -259,6 +259,7 @@ background: #343434;
 }
 #hero-banner{
   background: #F7F7F7 url('../images/banner/bg1.png') no-repeat 92% bottom; 
+  font-size: 390px;
   }
 #hero-banner h2 {
   margin-top: 180px;

@@ -258,8 +258,8 @@ background: #343434;
   color: #000;
 }
 #hero-banner{
-  background: #F7F7F7 url('../images/banner/bg1.jpg') no-repeat 20% top;
-background-size: 40%;
+  background: #F7F7F7 url('../images/banner/bg1.jpg') no-repeat 30% top;
+background-size: 20%;
   }
 #hero-banner h2 {
   margin-top: 180px;

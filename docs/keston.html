@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>Burghardt Lab</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+</head> 
+
+<body id="home">
+      <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"  width=200px></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li> 
+			 <li class="scroll"><a href="#hero-banner3">Detecting Anti-Vaccine Users</a></li>
+			<li class="scroll"><a href="#hero-banner4">Antiscience Attitudes</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+	
+   <section id="grants">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Identifying Populations Susceptible to Anti-Science</h2>
+                <p class="wow fadeInDown">
+			<h3>
+        Goal:  <br>
+		    </h3>
+              
+              <img class="img-responsive" src="images/KestonProposal_AntiSci.jpg" alt="">
+              <h3>
+                What we accomplished:
+              </h3>
+              We developed three papers that built on each other to understand the spread of anti-science and then more generally extremist behavior:
+                  - First we focused our study on vaccine hesitancy, a component in modern-day anti-science discussions. We then developed an open source tool, <a href="https://github.com/Matheus-Schmitz/avaxtar">AVAXTAR</a> to predict who will be anti-vaccine on social media. Our analysis uncovered a range of differences between anti-vaccine and regular users, such as more negative sentiment in anti-vaccine users:<br>
+              <h4> Normal user's tweet: </h4> As first runner-up to my esteemed @StarTrek colleague @levarburton [when we appeared on #TheWeakestLink ], I would be honored to try my hand as #Jeopardy guest host. My experience as a science presenter for @exploreplanets emboldens me to #boldlygo !<br>
+              <h4> Anti-vaccine user's tweet: </h4> Even with the inflated (for scaremongering purposes I can only assume) figure of 126k people who died WITH (not OF remember) covid19, that would mean that in a whole year this ”killer virus” hasnt even managed to kill 0.19% of almost 68 million people in the UK. ”pandemic”<br>
+              Moreover, anti-vaccine users could be predicted with high accuracy a year in advance, in part because of their frequent use of conspiratorial language.
+              <a href="antisci.html">We discuss the paper we wrote about AVAXTAR, "Detecting Anti-Vaccine Users on Twitter," in more detail here.</a>
+              <img class="img-responsive" src="images/Causality.jpg" alt="">
+		    </p>
+            </div>
+        </div>
+    </section><!--/#about-->
+  
+  
+  
+   <section id="about">
+             <div class="banner-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                    <h2><a href="https://arxiv.org/abs/2110.11333">Detecting Anti-Vaccine Users on Twitter</a></h2><br>
+				    <h3>Matheus Schmitz, Goran Muric, Keith Burghardt</h3>
+				    Vaccine hesitancy, which has recently been driven by online narratives, significantly degrades the efficacy of vaccination strategies, such as those for COVID-19. 
+                              Despite broad agreement in the medical community about the safety and efficacy of available vaccines, a large number of social media users continue to be inundated with false information about vaccines and are indecisive or unwilling to be vaccinated. The goal of this study is to better understand anti-vaccine sentiment by developing a system capable of automatically identifying the users responsible for spreading anti-vaccine narratives. We introduce a publicly available Python package capable of analyzing Twitter profiles to assess how likely that profile is to share anti-vaccine sentiment in the future. The software package is built using text embedding methods, neural networks, and automated dataset generation and is trained on several million tweets. We find this model can accurately detect anti-vaccine users up to a year before they tweet anti-vaccine hashtags or keywords. We also show examples of how text analysis helps us understand anti-vaccine discussions by detecting moral and emotional differences between anti-vaccine spreaders on Twitter and regular users. Our results will help researchers and policy-makers understand how users become anti-vaccine and what they discuss on Twitter. Policy-makers can utilize this information for better targeted campaigns that debunk harmful anti-vaccination myths.                             </div><br>
+			    </div>
+          <h4> Cite as: M. Schmitz, G. Murić, K. Burghardt. (2022). Detecting Anti-Vaccine Users on Twitter. In: ICWSM 2023 (in press).</h4>
+			   <div class="row">
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/avax/avax00.jpg" width=300px alt="">
+			Upper: Confusion Matrix before and after threshold optimization; Lower: Relation between  classification threshold and F1-Score. Optimal threshold for the highest F1-Score is 0.5729.
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/avax/avax01.jpg" width=300px alt="">
+			Most frequently used words for anti-vaccine and non anti-vaccine users. A few words used uncommonly often by each respective group are highlighted. Anti-vaccine users show a greater propensity to use conspiratorial langauge (e.g., the conspiracy related to Dominion ballots).
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/avax/avax02.jpg" width=500px alt="">
+			Emotion and Sentiment of tweets from Anti-Vaccination and Non-Anti-Vaccination accounts, based on NRC Lexicon. We notice that anti-vaccine users are much more negative than non-anti-vaccine users.
+                </div>		
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/avax/avax03.jpg" width=700px alt="">
+			Moral Foundations of anti-vaccine and regular users. (a) Bias (the tendency of words to promote positive or negative aspects of each moral foundation) are typically less positive in anti-vaccine users. (b) Intensity (the focus of words towards particular moral foundations) is also typically lower for anti-vaccine users.
+                </div>				   
+               </div>	
+		     </div>
+		     </div>
+</section>
+     <section id="hero-banner4">
+             <div class="banner-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                    <h2><a href="https://www.jmir.org/2021/6/e26692/">Political Partisanship and Antiscience Attitudes in Online Discussions About COVID-19: Twitter Content Analysis
+Political Partisanship and Antiscience Attitudes in Online Discussions About COVID-19: Twitter Content Analysis</a></h2><br>
+				    <h3>Ashwin Rao, Fred Morstatter, Minda Hu, Emily Chen, Keith Burghardt, Emilio Ferrara,  Kristina Lerman</h3>
+The novel coronavirus pandemic continues to ravage communities across the United States. Opinion surveys identified the importance of political ideology in shaping perceptions of the pandemic and compliance with preventive measures. The aim of this study was to measure political partisanship and antiscience attitudes in the discussions about the pandemic on social media, as well as their geographic and temporal distributions. We analyzed a large set of tweets from Twitter related to the pandemic, collected between January and May 2020, and developed methods to classify the ideological alignment of users along the moderacy (hardline vs moderate), political (liberal vs conservative), and science (antiscience vs proscience) dimensions. We found a significant correlation in polarized views along the science and political dimensions. Moreover, politically moderate users were more aligned with proscience views, while hardline users were more aligned with antiscience views. Contrary to expectations, we did not find that polarization grew over time; instead, we saw increasing activity by moderate proscience users. We also show that antiscience conservatives in the United States tended to tweet from the southern and northwestern states, while antiscience moderates tended to tweet from the western states. The proportion of antiscience conservatives was found to correlate with COVID-19 cases. Our findings shed light on the multidimensional nature of polarization and the feasibility of tracking polarized opinions about the pandemic across time and space through social media data.
+                            </div><br>
+			    </div>
+          <h4> Cite as: Rao, A., Morstatter, F., Hu, M., Chen, E., Burghardt, K., Ferrara, E., & Lerman,  K. (2021). Political Partisanship and Anti-Science Attitudes in Online Discussions about Covid-19.
+J Med Internet Res 23(6):e26692.</h4>
+
+			   <div class="row">				
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/antisci/antisci00.jpg" width=700px alt="">
+			The distribution of domain scores along science, political, and moderacy dimensions. (a) The vertical lines at 0.42 and −1 mark the top and bottom 30% cutoffs of distribution along the science dimension, which are binned as proscience (+1) and antiscience (−1), respectively. (b) The vertical lines at 1 and −0.33 mark the top and bottom 30% cutoffs of distribution along the political dimension, which are binned as conservative (+1) and liberal (−1), respectively. (c) The vertical lines at 0.38 and −0.18 mark the top and bottom 30% cutoffs of distribution along the moderacy dimension, which are binned as moderate (+1) and hardline (−1), respectively.
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/antisci/antisci01.jpg" width=500px alt="">
+			 Polarization of COVID-19 tweets. On the left is the heat map of polarization (domain scores) along the science-partisanship dimensions. On the right is the heat map of polarization (domain scores) along the science-moderacy dimensions. Each bin within the heat map represents the number of users with domain scores falling within that bin. We find that tend to be more liberal while anti-science users tend to be more conservative.
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/antisci/antisci02.jpg" width=300px alt="">
+			Fraction of active users per ideological group in biweekly periods. Moderate pro-science users become slightly more common over time due to changes in the demographics of users and not because users change their opinions.
+                </div>		
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/antisci/antisci03.jpg" width=500px alt="">
+			Topics of discussion within the six ideological groups. The top row (from left to right) illustrates topics for proscience-left, proscience-moderate, and proscience-right groups. The bottom row (from left to right) illustrates topics for antiscience-left, antiscience-moderate, and antiscience-right groups.
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                  <img class="img-responsive" src="images/antisci/antisci04.jpg" width=700px alt="">
+			 Fraction of US states' Twitter users per ideological category. Plots (a) to (c) (top row, left to right) show the fraction of states' Twitter users who were classified as proscience-left, proscience-moderate, and proscience-right, respectively. Plots (d) to (f) (bottom row, left to right) show the fraction of states’ Twitter users who were classified as antiscience-left, antiscience-moderate, and antiscience-right, respectively. The vertical bars next to the maps indicate the fraction of Twitter users in the state belonging to the ideological group. Two-letter abbreviations are used for each state. We notice that anti-vaccine users tend to cluster in the Southeast and upper Western US. Pro-science moderates, meanwhile, are seen throughout the US, while pro-science liberals and conservatives tend to concentrate in the Midwest and Southwest.
+                </div>				   
+             </div>	
+		     </div>
+		     </div>
+</section>
+  
+	
+	
+  
+  </body>
+</html>
